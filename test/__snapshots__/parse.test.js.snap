@@ -1164,6 +1164,108 @@ Object {
 }
 `;
 
+exports[`VCF spec header can parse breakends 1`] = `
+Array [
+  Variant {
+    "ALT": Array [
+      "G]8:107653520]",
+    ],
+    "CHROM": "11",
+    "FILTER": "PASS",
+    "ID": Array [
+      "MantaBND:0:2:3:0:0:0:1",
+    ],
+    "INFO": Object {
+      "BND_DEPTH": Array [
+        "216",
+      ],
+      "CIPOS": Array [
+        0,
+        2,
+      ],
+      "HOMLEN": Array [
+        2,
+      ],
+      "HOMSEQ": Array [
+        "TT",
+      ],
+      "MATEID": Array [
+        "MantaBND:0:2:3:0:0:0:0",
+      ],
+      "MATE_BND_DEPTH": Array [
+        "735",
+      ],
+      "SVTYPE": Array [
+        "BND",
+      ],
+    },
+    "POS": 94975747,
+    "QUAL": null,
+    "REF": "G",
+  },
+  Variant {
+    "ALT": Array [
+      "<DEL>",
+    ],
+    "CHROM": "11",
+    "FILTER": "PASS",
+    "ID": Array [
+      "MantaDEL:0:1:2:0:0:0",
+    ],
+    "INFO": Object {
+      "CIEND": Array [
+        -150,
+        150,
+      ],
+      "CIPOS": Array [
+        -156,
+        156,
+      ],
+      "END": Array [
+        94987865,
+      ],
+      "IMPRECISE": null,
+      "SVLEN": Array [
+        12112,
+      ],
+      "SVTYPE": Array [
+        "DEL",
+      ],
+    },
+    "POS": 94975753,
+    "QUAL": null,
+    "REF": "T",
+  },
+  Variant {
+    "ALT": Array [
+      "T[8:107653411[",
+    ],
+    "CHROM": "11",
+    "FILTER": "PASS",
+    "ID": Array [
+      "MantaBND:0:0:1:0:0:0:0",
+    ],
+    "INFO": Object {
+      "BND_DEPTH": Array [
+        "171",
+      ],
+      "MATEID": Array [
+        "MantaBND:0:0:1:0:0:0:1",
+      ],
+      "MATE_BND_DEPTH": Array [
+        "830",
+      ],
+      "SVTYPE": Array [
+        "BND",
+      ],
+    },
+    "POS": 94987872,
+    "QUAL": null,
+    "REF": "T",
+  },
+]
+`;
+
 exports[`VCF spec header can parse the spec example 1`] = `
 Array [
   Variant {
