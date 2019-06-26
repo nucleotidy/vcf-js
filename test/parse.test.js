@@ -350,3 +350,11 @@ test('shortcut parsing with 1000 genomes', () => {
   })
   expect(ret).toMatchSnapshot()
 })
+
+test('parse the ANN field', () => {
+  const { header, lines } = readVcf(require.resolve('./data/test.jannovar.vcf'))
+
+  const VCFParser = new VCF({ header })
+  const variants = lines.map(line => VCFParser.parseLine(line)).filter(x => x)
+  console.log(JSON.stringify(variants, 0, 2))
+})
